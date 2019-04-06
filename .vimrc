@@ -171,6 +171,9 @@ if has('gui_running')
   let g:tex_flavor='latex'
 endif
 
+set spelllang=en
+
 "Filetype specific options
 autocmd BufRead,BufNewFile *.tex colorscheme moria
 autocmd BufRead,BufNewFile *.tex SyntasticT
+autocmd BufRead,BufNewFile *.tex setlocal spell
